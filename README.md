@@ -1,7 +1,6 @@
-<<<<<<< HEAD
 # ROS2 Coursework Projects
 
-This directory contains various ROS2 learning projects and coursework assignments.
+This repository contains ROS2 learning projects, coursework assignments, and Raspberry Pi packages.
 
 ## Project Structure
 
@@ -20,27 +19,16 @@ This directory contains various ROS2 learning projects and coursework assignment
 - **turtlesim_gotta_catch_em_all/** - Turtlesim game project
 - **turtlesim_project_cpp/** - Turtlesim project in C++
 - **final_project/** - Capstone/final project
+- **rpi_arduino/** - Arduino control
+- **rpi_bringup/** - Raspberry Pi launch and configuration files
+- **rpi_linmot/** - LinMot control
+- **rpi_tests/** - Raspberry Pi test and utility nodes
 
 ## Building
-
 ```bash
-cd ~/ros2_ws
-colcon build --packages-select ros2_coursework
-# Or to exclude from main build:
-colcon build --packages-ignore ros2_coursework
+colcon build
+```
 ```
 
 ## Notes
-
-These are learning projects from ROS2 courses and tutorials. They serve as examples and practice for various ROS2 concepts.
-=======
-# ROS2 Raspberry Pi Workspace
-
-This repository contains the `src` folder for my ROS2 workspace on Raspberry Pi.
-- `src/` → ROS2 packages
-- `build/`, `install/`, `log/` → ignored via .gitignore
-
-To build:
-```bash
-colcon build
->>>>>>> rpi/main
+These are learning projects from ROS2 courses and tutorials, together with hardware-specific packages for the Raspberry Pi workspace.
