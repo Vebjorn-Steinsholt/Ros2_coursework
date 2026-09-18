@@ -1,7 +1,9 @@
+<<<<<<< HEAD
 # ROS2 Build artifacts
 install/
 build/
 log/
+.colcon/
 *.bag
 
 # Python
@@ -29,3 +31,6 @@ Thumbs.db
 # Dependencies
 venv/
 env/
+# Local Git recovery files
+.git.backup_*
+.git.corrupted

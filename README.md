@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ROS2 Coursework Projects
 
 This directory contains various ROS2 learning projects and coursework assignments.
@@ -32,3 +33,14 @@ colcon build --packages-ignore ros2_coursework
 ## Notes
 
 These are learning projects from ROS2 courses and tutorials. They serve as examples and practice for various ROS2 concepts.
+=======
+# ROS2 Raspberry Pi Workspace
+
+This repository contains the `src` folder for my ROS2 workspace on Raspberry Pi.
+- `src/` → ROS2 packages
+- `build/`, `install/`, `log/` → ignored via .gitignore
+
+To build:
+```bash
+colcon build
+>>>>>>> rpi/main
