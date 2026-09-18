@@ -1,0 +1,28 @@
+<launch>
+  <arg name="turtlebot3_model" default="waffle"/>
+  <arg name="use_sim_time" default="true"/>
+
+  <set_env
+    name="TURTLEBOT3_MODEL"
+    value="$(var turtlebot3_model)"/>
+
+  <include
+    file="$(find-pkg-share turtlebot3_gazebo)/launch/turtlebot3_house.launch.py"/>
+
+  <include
+    file="$(find-pkg-share turtlebot3_cartographer)/launch/cartographer.launch.py">
+    <arg name="use_sim_time" value="$(var use_sim_time)"/>
+  </include>
+
+  <node
+    pkg="joy"
+    exec="joy_node"
+    name="joy_node"
+    output="screen"/>
+
+  <node
+    pkg="joy_teleop_bridge"
+    exec="joy_teleop_bridge"
+    name="joystick_teleop_twist"
+    output="screen"/>
+</launch>
